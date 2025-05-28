@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="Font Awesome/css/all.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="sub-header">
+    <nav>
+        <a href="universitywebsite.html">
+        <img src="images/Logo.png" width="400px"height="56px"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="universitywebsite.html">HOME</a></li> 
+                <li><a href="Aboutus.html">ABOUT</a></li> 
+                <li><a href="Course.html">COURSE</a></li> 
+                <li><a href="Blog.html">BLOG</a></li>    
+                <li><a href="Contact.html">CONTACT</a></li> 
+            </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Contact Us</h1>
+</section>
+<!---------------Contact us---------------->
+<section class="Location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3689.600654546974!2d70.79305873006909!3d22.3687028344328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959c972761ce515%3A0x3651e3fe1e9df4f8!2sMarwadi%20University!5e0!3m2!1sen!2sin!4v1698552295136!5m2!1sen!2sin" 
+    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+<section class="contact-us">
+    <div class="row">
+        <div class="contact-col">
+            <div>
+                <i class="fa-solid fa-house"></i>
+                <span>
+                    <h5>Marwadi University,Rakot-Morbi Highway</h5>
+                    <P>Rajkot,Gujarat,India</P>
+                </span>
+            </div>
+            <div>
+                <i class="fa-solid fa-phone"></i>
+                <span>
+                    <h5>+91 1800561252</h5>
+                    <P>Monday to Saturday,10AM to 6PM</P>
+                </span>
+            </div>
+            <div>
+                <i class="fa-solid fa-envelope"></i>
+                <span>
+                    <h5>helpdesk@marwadieducation.edu.in</h5>
+                    <P>Email us your query</P>
+                </span>
+            </div>
+        </div>
+        <div class="contact-col">
+        <form class="contact-frm">
+            <input type="text" placeholder="Enter your Name" required>
+            <input type="email" placeholder="Enter email Address" required>
+            <input type="text" placeholder="Enter your subject" required>
+            <textarea rows="8" placeholder="Message" required></textarea>
+            <button type="submit" class="hero-btn red-btn">Send Message</button>
+        </form>
+    </div>
+
+
+
+    </div>
+</section>
+<!-------------Footer---------------->
+<section class="footer">
+    <h2>About Us</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos veniam consectetur enim accusantium ipsa aliquid eveniet? Ut expedita et incidunt.</p>
+    <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+    </div>
+    <div class="Footerbottom">
+    <p>@Copyright 2023 designed by Saksham</p>
+</div>
+</section>
+    <!--JS FOR MENU--->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0px";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+  
+    </script>
+
+
+</body>
+</html>
